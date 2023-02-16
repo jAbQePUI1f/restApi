@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnityObjects;
+using restApi.shared;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace restApi.repository
@@ -18,7 +19,7 @@ namespace restApi.repository
         string season = Configuration.getSeason();
         string companyCode = Configuration.getCompanyCode();
         string conString = Configuration.getLogoConnection();
-        public int getLogicalRef(String ficheNo)
+        public int getRetailers(String ficheNo)
         {
             int LogicalRef = 0;
 
@@ -50,6 +51,18 @@ namespace restApi.repository
             }
 
             return LogicalRef;
+
+
+
+            //CreateRetailerReqJson postRetailModel = new CreateRetailerReqJson();
+            //postRetailModel.address = "";
+
+
+            //HttpClientHelper helper = new HttpClientHelper();
+
+            //helper.SendPOSTRequest("username", "pass", "Retailers", postRetailModel);
+
+
         }
     }
 }
