@@ -9,7 +9,7 @@ namespace restApi.shared
 {
     public class HttpClientHelper
     {
-
+        //toDo
         //public HttpClientHelper()
         //{
 
