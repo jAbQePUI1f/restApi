@@ -9,6 +9,14 @@ namespace restApi.config
 {
     internal class Configuration
     {
+        public static string getApiUserName()
+        {
+            return ConfigurationManager.AppSettings["ApiUserName"];
+        }
+        public static string getApiPassword()
+        {
+            return ConfigurationManager.AppSettings["ApiPassword"];
+        }
         public static string getLogoUserName()
         {
             return ConfigurationManager.AppSettings["LogoUserName"];
