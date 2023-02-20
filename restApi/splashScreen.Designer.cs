@@ -31,8 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(splashScreen));
             this.bttnPostRetailer = new System.Windows.Forms.Button();
             this.bttnPostStock = new System.Windows.Forms.Button();
-            this.bttnPostProduct = new System.Windows.Forms.Button();
+            this.bttnPostSales = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblLoading = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bttnPostRetailer
@@ -53,30 +54,40 @@
             this.bttnPostStock.Text = "Stocks";
             this.bttnPostStock.UseVisualStyleBackColor = true;
             // 
-            // bttnPostProduct
+            // bttnPostSales
             // 
-            this.bttnPostProduct.Location = new System.Drawing.Point(323, 151);
-            this.bttnPostProduct.Name = "bttnPostProduct";
-            this.bttnPostProduct.Size = new System.Drawing.Size(115, 57);
-            this.bttnPostProduct.TabIndex = 2;
-            this.bttnPostProduct.Text = "Products";
-            this.bttnPostProduct.UseVisualStyleBackColor = true;
+            this.bttnPostSales.Location = new System.Drawing.Point(323, 151);
+            this.bttnPostSales.Name = "bttnPostSales";
+            this.bttnPostSales.Size = new System.Drawing.Size(115, 57);
+            this.bttnPostSales.TabIndex = 2;
+            this.bttnPostSales.Text = "Sales";
+            this.bttnPostSales.UseVisualStyleBackColor = true;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(105, 97);
+            this.progressBar1.Location = new System.Drawing.Point(49, 97);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(328, 23);
+            this.progressBar1.Size = new System.Drawing.Size(330, 23);
             this.progressBar1.TabIndex = 3;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // lblLoading
+            // 
+            this.lblLoading.AutoSize = true;
+            this.lblLoading.Location = new System.Drawing.Point(392, 102);
+            this.lblLoading.Name = "lblLoading";
+            this.lblLoading.Size = new System.Drawing.Size(47, 15);
+            this.lblLoading.TabIndex = 4;
+            this.lblLoading.Text = "loading";
             // 
             // splashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 314);
+            this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.bttnPostProduct);
+            this.Controls.Add(this.bttnPostSales);
             this.Controls.Add(this.bttnPostStock);
             this.Controls.Add(this.bttnPostRetailer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -84,6 +95,7 @@
             this.Text = "RTDC Integrator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -91,7 +103,8 @@
 
         private Button bttnPostRetailer;
         private Button bttnPostStock;
-        private Button bttnPostProduct;
+        private Button bttnPostSales;
         private ProgressBar progressBar1;
+        private Label lblLoading;
     }
 }

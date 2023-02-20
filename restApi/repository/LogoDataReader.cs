@@ -19,7 +19,9 @@ namespace restApi.repository
         string season = Configuration.getSeason();
         string companyCode = Configuration.getCompanyCode();
         string conString = Configuration.getLogoConnection();
-        public int getRetailers(String ficheNo)
+        public string getRetailers(String dataSourceCode, String retailerCode, String retailerRefId, String ChannelCode, String title,
+            String email, String phone, String taxOffice, String taxNumber, String contactName, String country, String city,
+            String district, String address, String zipCode)
         {
             int LogicalRef = 0;
 
