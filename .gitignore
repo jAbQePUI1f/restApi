@@ -452,3 +452,7 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# If you wish NOT to ignore path (files or folders) add the !
+!.restApi\restApi\logoInfo.config
+
